@@ -1,0 +1,15 @@
+{
+  "name": "mongo_relationships",
+  "version": "1.0.0",
+  "description": "## One to few #### Embed the data directly in the document ```Javascript {     name: 'Tommy Cash',      savedAddresses: [         { street: 'Rahukohtu 3', city: 'Tallin', country: 'Estonia'},         { street:: 'Ravala 5', city: 'Tallin', country: 'Estonia'}     ] } ``` More than one address assigned to a single user (e.g. Amazon). In most cases, it makes sense to embed the address data inside of the user, but it really depends on how we are using the data. Are we using address data on its own? Or is it more likely that it will be associated with a user anyhow? In that case, the above example is a good approach.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.13.5"
+  }
+}
